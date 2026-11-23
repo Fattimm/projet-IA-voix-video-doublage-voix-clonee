@@ -3,6 +3,14 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Médias et données du projet (jamais sur GitHub)
+*.mp4
+*.mov
+*.wav
+*.mp3
+data/
+sorties/
+
 # C extensions
 *.so
 
