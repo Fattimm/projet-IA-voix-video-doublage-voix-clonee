@@ -1,6 +1,8 @@
 """Étapes ① et ② : extraire le son de la vidéo, puis séparer la voix du fond.
 Responsable : Fatoumata
 """
+import os
+import subprocess
 
 
 def extraire_audio(chemin_video, chemin_wav):
@@ -8,7 +10,9 @@ def extraire_audio(chemin_video, chemin_wav):
 
     Renvoie : le chemin du fichier .wav créé.
     """
-    raise NotImplementedError("À faire par Fatoumata")
+    commande = ["ffmpeg", "-y", "-i", chemin_video, "-vn", "-ac", "1", "-ar", "24000", chemin_wav]
+    subprocess.run(commande, check=True)
+    return chemin_wav
 
 
 def separer_voix_fond(chemin_wav, dossier_sortie):
@@ -16,4 +20,9 @@ def separer_voix_fond(chemin_wav, dossier_sortie):
 
     Renvoie : (chemin_voix, chemin_fond), deux fichiers .wav.
     """
-    raise NotImplementedError("À faire par Fatoumata")
+    commande = ["python", "-m", "demucs", "--two-stems=vocals", "-o", dossier_sortie, chemin_wav]
+    subprocess.run(commande, check=True)
+    nom = os.path.splitext(os.path.basename(chemin_wav))[0]
+    dossier = os.path.join(dossier_sortie, "htdemucs", nom)
+    return os.path.join(dossier, "vocals.wav"), os.path.join(dossier, "no_vocals.wav")
+
