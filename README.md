@@ -75,6 +75,8 @@ On prend une vidéo de 2 minutes où une personne parle **français**, et on pro
 - **Khadidiatou** : branche `khadidiatou/traduction`, puis remplir `src/translate.py`. Préparer aussi les formulaires de consentement.
 - **Alassane** : branche `alassane/installation`, puis tester l'installation sur Colab (XTTS, Whisper, Demucs) et remplir `requirements.txt`.
 
+Toutes les tâches, jour par jour, sont dans [TACHES.md](TACHES.md). Chacune a aussi son Issue sur GitHub.
+
 ## Le format des segments (à ne pas changer seul)
 
 Toutes les étapes se passent une liste de segments (une phrase = un segment) :
