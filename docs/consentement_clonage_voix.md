@@ -1,6 +1,6 @@
 # Formulaire de consentement : clonage de voix
 
-Je soussigné(e) ________Khady Ja____________, autorise le groupe 1 du projet
+Je soussigné(e) ____________________, autorise le groupe 1 du projet
 « Doublage avec voix clonée » (École du Code Sonatel Academy, module IA Voix et Vidéo)
 à enregistrer ma voix et à la cloner avec un modèle d'IA (XTTS-v2).
 
@@ -10,4 +10,4 @@ Je soussigné(e) ________Khady Ja____________, autorise le groupe 1 du projet
 - Mes enregistrements ne sont pas publiés sur GitHub (stockage privé sur le Drive).
 
 Fait à _______Dakar_____, le __25/11/2026__________
-Signature : Khady Ja N.
+Signature :
